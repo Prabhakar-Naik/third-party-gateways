@@ -1,0 +1,30 @@
+package com.springboot.thirdparty.gateway.config;
+
+import com.paypal.base.rest.APIContext;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.aspectj.EnableSpringConfigured;
+import org.springframework.stereotype.Service;
+
+/**
+ * @author prabhakar, @Date 30-09-2024
+ */
+@Configuration
+public class PayPalConfig {
+
+    @Value("${paypal.client.id}")
+    private String clientId;
+
+    @Value("${paypal.client.secret}")
+    private String clientSecret;
+
+    @Value("${paypal.mode}")
+    private String mode;
+
+    @Bean
+    public APIContext apiContext(){
+        return new APIContext(clientId,clientSecret,mode);
+    }
+
+}
