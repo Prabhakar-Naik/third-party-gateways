@@ -7,7 +7,7 @@ This is the sample Application which is integration with third party dependency 
 please go through <a href="https://www.wati.io/">WATI</a> documentation you can learn more things in WATI api integration part.
 
 <h2>Second API Integration RazorPay Business API:</h2>
-please go through <a href="https://razorpay.com/">RAZORPAY</a> documentation you can learn the things on <a href=""https://razorpay.com/docs/#home-payments>developer docs</a> for integration guide.
+please go through <a href="https://razorpay.com/">RAZORPAY</a> documentation you can learn the things on <a href="https://razorpay.com/docs/#home-payments">developer docs</a> for integration guide.
 Then Go with <a href="https://razorpay.com/docs/api">API Reference</a> you can easily develop the integration.
 
 <h2>Third API Integration PayPal Business API:</h2>
