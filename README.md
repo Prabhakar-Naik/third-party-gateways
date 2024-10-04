@@ -11,7 +11,7 @@ please go through <a href="https://razorpay.com/">RAZORPAY</a> documentation you
 Then Go with <a href="https://razorpay.com/docs/api">API Reference</a> you can easily develop the integration.
 
 <h2>Third API Integration PayPal Business API:</h2>
-please go through <a href="https://paypal.com/">RAZORPAY</a> you can develop payment gateway in your app easily.
+please go through <a href="https://paypal.com/">PAYPAL</a> you can develop payment gateway in your app easily.
 Then refer the api documentation in paypal developer API <a href="https://developer.paypal.com/home/">API Reference</a>
 
 <h2>Fourth API Integration Aadhaar KYC Verification API:</h2>
