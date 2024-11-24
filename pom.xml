@@ -70,7 +70,12 @@
 			<artifactId>razorpay-java</artifactId>
 			<version>1.4.7</version>
 		</dependency>
-
+		<!-- stripe dependency -->
+		<dependency>
+			<groupId>com.stripe</groupId>
+			<artifactId>stripe-java</artifactId>
+			<version>28.1.0</version>
+		</dependency>
 		<dependency>
 			<groupId>com.paypal.sdk</groupId>
 			<artifactId>paypal-core</artifactId>
