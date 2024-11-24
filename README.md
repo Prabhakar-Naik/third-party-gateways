@@ -21,3 +21,5 @@ Here you can refer developer documentation: <a href="https://developer.sandbox.c
 <h2>Third API Integration Stripe Payment API:</h2>
 please go through <a href="https://stripe.com/in/">STRIPE</a> you can develop payment gateway in your app easily.
 Then refer the api documentation in stripe developer API <a href="https://docs.stripe.com/api">API Reference</a>
+
+# All Above third party integrations you must configure secure systems with it. guide will be soon.
