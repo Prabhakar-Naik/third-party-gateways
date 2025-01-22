@@ -8,6 +8,7 @@ import lombok.Data;
  */
 @Data
 public class GetData {
+    @JsonProperty("@entity")
     private String entity;
     @JsonProperty("reference_id")
     private String referenceId;

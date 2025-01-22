@@ -27,7 +27,7 @@ public class SchedulerConfig {
 
     @Scheduled(fixedRate = 86400000) // 24 hours in milliseconds
     public void refreshAccessToken() {
-        authService.refreshAccessToken();
+        authService.fetchAccessToken();
     }
 
 }

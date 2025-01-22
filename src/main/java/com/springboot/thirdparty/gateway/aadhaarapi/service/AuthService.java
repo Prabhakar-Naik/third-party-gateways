@@ -68,7 +68,7 @@ public class AuthService {
 
     public String getAccessToken() {
         if (System.currentTimeMillis() > tokenExpiryTime) {
-            return refreshAccessToken();
+            return fetchAccessToken();
         }
         return this.accessToken;
     }

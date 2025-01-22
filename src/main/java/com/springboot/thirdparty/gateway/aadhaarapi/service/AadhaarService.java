@@ -24,7 +24,6 @@ public class AadhaarService {
     private final AadhaarStateRepository stateRepository;
     private final RestTemplate restTemplate;
     private final AuthService authService;
-
     private final SandBoxConfig sandBoxConfig;
 
     public AadhaarService(AadhaarStateRepository stateRepository, RestTemplate restTemplate, AuthService authService, SandBoxConfig sandBoxConfig) {
@@ -36,7 +35,7 @@ public class AadhaarService {
 
 
     public ResponseEntity<AadhaarResponseDto> generateOtpForAadhaar(String aadhaarNumber) {
-        String url = this.sandBoxConfig.getSandboxUrl() + "requested url";
+        String url = this.sandBoxConfig.getSandboxUrl() + "/kyc/aadhaar/okyc/otp";
 
         HttpHeaders headers = new HttpHeaders();
         headers.set("Authorization",this.authService.getAccessToken());
@@ -47,7 +46,7 @@ public class AadhaarService {
 
 
         AadhaarRequestDto requestBody = new AadhaarRequestDto();
-        requestBody.setEntity("requested entity value");
+        requestBody.setEntity("in.co.sandbox.kyc.aadhaar.okyc.otp.request");
         requestBody.setAadhaarNumber(aadhaarNumber);
         requestBody.setConsent("y");
         requestBody.setReason("For KYC");
@@ -73,7 +72,7 @@ public class AadhaarService {
 
 
     public ResponseEntity<AadhaarResponseDto> verifyOtp(OtpRequestDto requestDto) {
-        String url = this.sandBoxConfig.getSandboxUrl() + "requested url";
+        String url = this.sandBoxConfig.getSandboxUrl() + "/kyc/aadhaar/okyc/otp/verify";
 
         HttpHeaders headers = new HttpHeaders();
         headers.set("authorization",this.authService.getAccessToken());
@@ -84,7 +83,7 @@ public class AadhaarService {
 
 
         OtpRequestDto requestBody = new OtpRequestDto();
-        requestBody.setEntity("requested entity value");
+        requestBody.setEntity("in.co.sandbox.kyc.aadhaar.okyc.request");
         requestBody.setReference_id(requestDto.getReference_id());
         requestBody.setOtp(requestDto.getOtp());
 

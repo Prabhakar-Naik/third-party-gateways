@@ -18,8 +18,13 @@ Then refer the api documentation in paypal developer API <a href="https://develo
 please go through <a href="https://dashboard.sandbox.co.in">SANDBOX</a> documentation you can learn the things which is government authority api like Aadhaar verification, PAN verification ect.
 Here you can refer developer documentation: <a href="https://developer.sandbox.co.in/reference/authenticate-api">API Reference</a>
 
-<h2>Third API Integration Stripe Payment API:</h2>
+<h2>Fifth API Integration Stripe Payment API: STRIPE Payment Gateway</h2>
 please go through <a href="https://stripe.com/in/">STRIPE</a> you can develop payment gateway in your app easily.
 Then refer the api documentation in stripe developer API <a href="https://docs.stripe.com/api">API Reference</a>
+
+<h2>Sixth API Integration 2Factor SMS API: Mobile OTP Verification</h2>
+please go through <a href="https://2factor.in/">2Factor</a> you can develop Mobile SMS Verification gateway in your app easily.
+Then refer the api documentation in 2Factor developer API <a href="https://documenter.getpostman.com/view/301893/TWDamFGh">API Reference</a>
+
 
 # All Above third party integrations you must configure secure systems with it. guide will be soon.
