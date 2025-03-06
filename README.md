@@ -26,5 +26,9 @@ Then refer the api documentation in stripe developer API <a href="https://docs.s
 please go through <a href="https://2factor.in/">2Factor</a> you can develop Mobile SMS Verification gateway in your app easily.
 Then refer the api documentation in 2Factor developer API <a href="https://documenter.getpostman.com/view/301893/TWDamFGh">API Reference</a>
 
+<h2>Seventh API Integration SMS Country SMS API: Mobile OTP Verification</h2>
+please go through <a href="https://www.smscountry.com/in">SMS Country</a> you can develop Mobile SMS Verification gateway in your app easily.
+Then refer the api documentation in SMS Country developer API at Official Web<a href="https://www.smscountry.com/restapidoc.html">API Reference</a>
+
 
 # All Above third party integrations you must configure secure systems with it. guide will be soon.
