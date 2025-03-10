@@ -33,7 +33,7 @@ public class AuthService {
     }
 
     public String fetchAccessToken() {
-        String url = this.sandBoxConfig.getSandboxUrl()+"requested url";
+        String url = this.sandBoxConfig.getSandboxUrl()+"/authenticate";
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
         headers.set("accept", "application/json");
@@ -50,7 +50,7 @@ public class AuthService {
 
 
     public String refreshAccessToken() {
-        String url = this.sandBoxConfig.getSandboxUrl()+"requested url"+this.getAccessToken();
+        String url = this.sandBoxConfig.getSandboxUrl()+"/authorize?request_token="+this.fetchAccessToken();
 
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
