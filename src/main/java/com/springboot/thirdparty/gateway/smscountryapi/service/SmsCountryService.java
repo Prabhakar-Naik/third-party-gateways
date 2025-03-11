@@ -62,9 +62,11 @@ public class SmsCountryService {
             logger.info("Request Payload: {}", requestBody);
             HttpEntity<Map<String, String>> entity = new HttpEntity<>(requestBody, headers);
 
+            String API_URL = smsCountryConfig.getApiUrl().replace("authKey", smsCountryConfig.getAuthKey());
+            API_URL = API_URL.concat("/SMSes/");
 
             SmsCountryResponse response = restTemplate.exchange(
-                    smsCountryConfig.getApiUrl().replace("authKey", smsCountryConfig.getAuthKey()),
+                    API_URL,
                     HttpMethod.POST, entity,
                     SmsCountryResponse.class).getBody();
 
