@@ -23,7 +23,6 @@ public class AuthService {
     private final SandBoxConfig sandBoxConfig;
 
     private String accessToken;
-
     private long tokenExpiryTime;
 
     @Autowired
