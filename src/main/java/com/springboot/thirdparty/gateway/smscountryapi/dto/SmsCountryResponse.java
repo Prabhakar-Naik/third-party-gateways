@@ -12,20 +12,15 @@ import lombok.Setter;
 @Getter
 @Data
 public class SmsCountryResponse {
-    @JsonProperty("ApiId")
-    private String apiId;
-    @JsonProperty("MessageUUID")
-    private String messageUUID;
-    @JsonProperty("Message")
-    private String message;
-    @JsonProperty("Success")
-    private String success;
+    private SendSmsResponse sendSmsResponse;
+    private SendBulkSmsResponse sendBulkSmsResponse;
 
-    public SmsCountryResponse(String apiId, String messageUUID, String message, String success) {
-        this.apiId = apiId;
-        this.messageUUID = messageUUID;
-        this.message = message;
-        this.success = success;
+    public SmsCountryResponse(SendSmsResponse sendSmsResponse) {
+        this.sendSmsResponse = sendSmsResponse;
+    }
+
+    public SmsCountryResponse(SendBulkSmsResponse sendBulkSmsResponse) {
+        this.sendBulkSmsResponse = sendBulkSmsResponse;
     }
 
 }
